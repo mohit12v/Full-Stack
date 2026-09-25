@@ -1,0 +1,33 @@
+.text {
+  color: red;
+  /* line-height: 1.5; */
+  /* word-spacing: 50px; */
+  /* text-indent: 60px;
+    letter-spacing: 10px; */
+  /* font-weight: bolder; */
+  text-decoration: none;
+}
+.transform {
+  /* text-transform: capitalize; */
+  /* text-transform: uppercase; */
+  text-transform: lowercase;
+}
+.list{
+    list-style: none;
+}
+.style{
+    font-style: italic;
+   
+}
+.start{
+    text-align: start;
+     border: 2px solid black;
+}
+.middle{
+    text-align: center;
+     border: 2px solid black;
+}
+.end{
+    text-align: end;
+     border: 2px solid black;
+}
