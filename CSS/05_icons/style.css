@@ -1,0 +1,12 @@
+.facebook ,.right{
+  color: skyblue;
+  font-size: 200px;
+}
+.instagram,.left {
+  color: rgb(156, 17, 89);
+  font-size: 200px;
+}
+.youtube,.down{
+  color: red;
+  font-size: 200px;
+}
