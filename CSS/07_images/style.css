@@ -1,0 +1,21 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+.container {
+  height: 800px;
+  width: 800px;
+  border: 2px solid black;
+  margin: auto;
+}
+.container img {
+  object-fit: contain;
+}
+ .background{
+  background-image: url(https://images.pexels.com/photos/547125/pexels-photo-547125.jpeg);
+  height: 800px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}

@@ -1,0 +1,24 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+.container {
+  height: 2000px;
+  width: 100%;
+  border: 2px solid black;
+}
+.home,
+.footer {
+  height: 600px;
+  border: 2px dotted blue;
+  text-align: center;
+  margin: 50px;
+}
+.background {
+  background-image: url(https://images.pexels.com/photos/1643113/pexels-photo-1643113.jpeg);
+  height: 600px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
