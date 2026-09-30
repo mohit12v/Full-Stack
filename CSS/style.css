@@ -1,0 +1,29 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+.box {
+  height: 200px;
+  width: 200px;
+  border: 2px solid black;
+  border-radius: 5px;
+  margin: 20px auto;
+  text-align: center;
+}
+.linear {
+  /* background: linear-gradient(red, teal, blue); */
+  /* background: linear-gradient(135deg, red,green,blue); */
+  /* background:linear-gradient( to left,yellow,teal); */
+  background: linear-gradient(to right, yellow, teal);
+}
+.radial {
+  /* background: radial-gradient(teal,green); */
+  /* background: radial-gradient(white,red,yellow); */
+  background: radial-gradient(circle, red, yellow);
+}
+.conic{
+    /* background: conic-gradient(#6495ED,#00CED1,teal); */
+    background: conic-gradient( from 45deg,red ,green,brown);
+
+}
