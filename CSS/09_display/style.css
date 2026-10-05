@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+span {
+  font-size: larger;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-style: italic;
+}
+.display {
+  display: inline-block;
+}
+.india {
+  border: 2px solid black;
+  height: 100px;
+  width: 100px;
+  margin: 20px;
+  display: inline;
+}
+.box {
+  display: inline-block;
+  background-color: aqua;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  height: 300px;
+  width: 200px;
+  text-align: center;
+}
+.car{
+    height: 400px;
+    width: 400px;
+    object-fit: cover;
+    
+}
+.car-1{
+    /* display: none; */
+    /* visibility: hidden; */
+}
+.car-2{
+    /* display: none; */
+    /* visibility: hidden; */
+}

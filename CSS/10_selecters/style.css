@@ -1,0 +1,103 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+.thoughts {
+  font-size: 70px;
+  color: red;
+  border: 2px solid black;
+  width: 90%;
+  text-align: center;
+  margin: auto;
+}
+.box {
+  border: 2px solid black;
+  text-align: center;
+  height: 200px;
+  width: 200px;
+  background-color: bisque;
+  color: brown;
+  font-size: 20px;
+  /* margin:10px; */
+  margin: auto;
+}
+.big {
+  height: 300px;
+  width: 200px;
+  color: blue;
+  background-color: green;
+}
+.small {
+  height: 200px;
+  width: 200px;
+  margin-top: 10px;
+  color: blueviolet;
+  background-color: yellow;
+}
+ul {
+  text-align: center;
+  margin-top: 15px;
+  font-size: 20px;
+}
+ul li:first-child {
+  color: blue;
+  font-size: 20px;
+  /* font-style: italic; */
+}
+ul li:last-of-type {
+  color: gray;
+  font-size: 50px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+ul li:nth-child(3) {
+  color: red;
+  font-size: 40px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+/* aa elementh last thi ketlamu ae kevanu */
+ul li:nth-last-child(3) {
+  color: green;
+  font-size: 30px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+/* aama khas karine text vache levu hoi to aekhlu aagal valu j name levu */
+#first {
+  text-align: center;
+}
+#first::first-letter {
+  font-size: 90px;
+
+  color: aqua;
+}
+#first::first-line {
+  font-size: larger;
+
+  color: red;
+}
+h1 {
+  text-align: center;
+}
+h1::selection {
+  color: red;
+}
+/* aama khas parent and child jova */
+/* aama khash  >Descendant te ae batha parent na chile ne selected nai kare pan only je pecifik child hase tene selected karse */
+/* parent p aem direct aapva ma aave to te batha parent ma p hase ae batha ne by default cathe kari lese */
+
+.para {
+  text-align: center;
+}
+.para > p {
+  color: yellow;
+  font-size: 40px;
+}
+.para h2 {
+  color: green;
+  font-size: 60px;
+}
+.para section p {
+  color: blue;
+  font-size: 40px;
+}
