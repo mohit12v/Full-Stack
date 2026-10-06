@@ -17,7 +17,6 @@
   margin: auto;
   margin-top: 20px;
   /* position: relative; */
-
 }
 .box {
   height: 150px;
@@ -61,6 +60,6 @@
   color: black;
   text-align: center;
   position: sticky;
- /* top: 0; */
- /* bottom: 0; */
+  top: 0;
+  /* bottom: 0; */
 }
