@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.heading::before{
+    content:"👋" ;
+}
+.btn{
+    height: 50px;
+    width: 150px;
+    border: 2px solid black;
+    border-radius: 5px;
+    position: relative;
+    background-color: blueviolet;
+    color: black;
+    font-size: 15px;
+}
+.btn::after{
+    content: " new";
+    position: absolute;
+    top: -10px;
+    font-size: 15px;
+    font-weight: bolder;
+    height: 20px;
+    border-radius: 5px;
+    border: 2px solid black;
+    width: 40px;
+    background-color: red;
+
+}
+.update{
+    height: 30px;
+    width: 100px;
+    border: 2px solid black;
+    border-radius: 5px;
+    position: relative;
+    background-color: green;
+    color: black;
+    font-size: 15px;
+    position: relative;
+}
+.update::after{
+    content: "NEW";
+    background-color: yellow;
+    border: 2px solid black;
+    border-radius: 5px;
+    top: -5px;
+    position: absolute;
+    height: 15px;
+    width: 30px;
+    font-size: small;
+
+}
+.byyy::before{
+    content: "👋";
+}

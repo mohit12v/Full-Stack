@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  height: 600px;
+  width: 50%;
+  border: 2px solid black;
+  margin: auto;
+}
+.box {
+  background-color: aqua;
+  height: 250px;
+  width: 20%;
+  border: 2px solid black;
+  text-align: center;
+  margin: 50px auto;
+  /* transition-duration: 2s; */
+  /* timing */
+  /* transition-delay: 2s; */
+  /* late time */
+  transition-property: border-radius,background-colour;
+  transition-timing-function:linear;
+}
+.box:hover {
+  /* background-color: aquamarine; */
+  background: linear-gradient(45deg, grey, red, blue);
+  border-radius: 50%;
+}
