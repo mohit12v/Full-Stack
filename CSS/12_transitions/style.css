@@ -22,6 +22,9 @@
   /* late time */
   transition-property: border-radius,background-colour;
   transition-timing-function:linear;
+  
+  /* transition: 2s all ease-in-out 1s; */
+  /* delay property timing function duration */
 }
 .box:hover {
   /* background-color: aquamarine; */

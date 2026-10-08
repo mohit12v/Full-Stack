@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  height: 600px;
+  width: 600px;
+  border: 2px solid black;
+  margin: auto;
+}
+.box {
+  height: 200px;
+  width: 200px;
+  border: 2px solid black;
+  margin: 50px auto;
+  text-align: center;
+  background-color: aquamarine;
+  transition: 2s all ease-in-out;
+}
+.box:hover {
+  background: radial-gradient(circle, blue, teal, yellow);
+  /* border-radius: 50%; */
+  /* transform: scale(1.5); */
+  /* nanu ke motu karva mate */
+  /* transform: scale(2); */
+  /* transform: scaleX(1.5); */
+  /* x - means aadu motu karva mate */
+  /* transform: scaleY(2); */
+  /* y - means ubhu motu karva mate */
+  /* transform: scale3d(2); */
+  /* z - means 3d hoi to aa apply thai */
+
+
+  /* skew - means  aadu karva mate kaju katri */
+  /* transform: skew(45deg); */
+  /* transform: skewX(90deg); */
+  /* transform: skewY(25deg); */
+
+
+  /* rotate - means gol.farse 360 ma  */
+  /* transform: rotate(45deg); */
+  /* transform: rotate(360deg); */
+  /* transform: rotateX(90deg); */
+  /* transform: rotateY(180deg); */
+
+  /* translate - thosuk aaghu karvu */
+  /* transform: translate(200px); */
+  /* transform: translateX(200px); */
+  transform: translateY(300px);
+
+}
