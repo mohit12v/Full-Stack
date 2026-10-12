@@ -9,9 +9,32 @@
   border: 2px solid black;
   margin: auto;
   display: flex;
+  /* flex-direction: column; */
+  /* flex-wrap: wrap; */
+  /* flex-flow: row wrap; */
+  /* gap: 10px; */
+  /* row-gap: 20px; */
+  /* column-gap: 20px; */
+  /* justify-content: center; */
+  /* align-items: center; */
+
 }
 .box {
   height: 100px;
-  width: 100px;
+  width: 150px;
   border: 2px solid black;
+}
+#box-1{
+  order: -1;
+  background-color: aqua;
+}
+#box-2{
+  order: 2;
+  background-color: gray;
+  flex-shrink: 100px;
+}
+#box-5{
+  order: 1;
+  background-color: green;
+  flex-basis: 200px;
 }
