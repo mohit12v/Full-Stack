@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.circle {
+  height: 200px;
+  width: 200px;
+  border: 2px dotted black;
+  margin: 100px auto;
+  animation-name: circle;
+  animation-duration: 5s;
+  background: radial-gradient(red, orange, yellow);
+  /* border-radius: 50%; */
+  animation-delay: 2s;
+}
+@keyframes circle {
+  from {
+    transform: rotate(0deg);
+    border-radius: 25%;
+    background-color: blue;
+  }
+  to {
+    transform: rotate(360deg);
+    border-radius: 50%;
+    background-color: yellow;
+  }
+}
+.container {
+  height: 800px;
+  width: 800px;
+  border: 2px dotted black;
+  margin: 100px auto;
+}
+.box {
+  height: 200px;
+  width: 200px;
+  border: 2px solid black;
+  animation-name: box;
+  animation-duration: 5s;
+  /* background: linear-gradient(teal,black,yellow) */
+  background-color: aquamarine;
+  animation-timing-function:ease-in-out;
+  animation-delay: 2s;
+  /* animation-iteration-count: infinite; */
+  transition: 2s all ease-in;
+  
+}
+.box:hover{
+    border-radius: 50%;
+    background-color: bisque;
+}
+
+@keyframes box {
+  0% {
+    transform: translate(0, 0);
+    background: linear-gradient(blue, red, green);
+  }
+
+  25% {
+    transform: translate(595px, 0);
+    background: radial-gradient(yellow, grey, white);
+    border-radius: 50%;
+  }
+
+  50% {
+    transform: translate(595px, 595px);
+    background: linear-gradient(red, teal, white);
+    border-radius: 25%;
+  }
+
+  75% {
+    transform: translate(0, 595px);
+    background-color: blueviolet;
+  }
+}
+div{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.btn{
+    height: 40px;
+    width: 100px;
+    animation-name: btn;
+    animation-duration: 5s;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    background-color: red;
+    animation-fill-mode: forwards;
+}
+@keyframes btn{
+    from{
+        transform: scale(1); 
+    }
+    to{
+        transform: scale(1.1);
+          box-shadow: rgb(236, 156, 156) 0px 5px 15px;
+          box-shadow: rgba(208, 35, 35, 0.488) 0px 5px 15px;
+          box-shadow: rgba(178, 8, 8, 0.892) 0px 5px 15px;
+          box-shadow: rgb(107, 4, 4) 0px 5px 15px;
+
+    }
+}
