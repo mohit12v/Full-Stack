@@ -1,0 +1,23 @@
+:root{
+    --primaryblue:#41269d;
+    --secoundgreen:#20a434;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+.super{
+    color: var(--primaryblue);
+
+}
+.btn{
+    color: var(--secoundgreen);
+    background-color: var(--primaryblue);
+    height: 20px;
+    width: 100px;   
+    border-radius: 30px;
+}
