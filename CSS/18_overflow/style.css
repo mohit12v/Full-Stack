@@ -11,5 +11,17 @@
     /* overflow: hidden; */
     /* overflow: scroll; */
     /* overflow-y: scroll; */
-    overflow-x: scroll;
+    /* overflow-x: scroll; */
+    overflow: auto;
+}
+.auto{
+    height:200px ;
+    width: 200px;
+    border: 2px solid black;
+    text-align: center;
+    overflow: auto;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+
 }
