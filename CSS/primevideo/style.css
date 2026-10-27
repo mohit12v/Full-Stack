@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #00050d;
+  color: white;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 50px;
+}
+.nav-left,
+.nav-right {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  justify-content: center;
+  text-align: center;
+}
+
+.logo {
+  width: 90px;
+}
+.sub,
+.grid {
+  height: 22px;
+  width: 22px;
+  color: white;
+  filter: invert(1);
+  margin: -3px;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+}
+.user {
+  height: 28px;
+  width: 28px;
+  margin: -4px;
+}
+nav a:hover {
+  color: black;
+  background-color: white;
+  border-radius: 5px;
+}
+.dropdown {
+  position: relative;
+}
+.language {
+  display: none;
+  position: absolute;
+  column-count: 4;
+  top: 50px;
+  right: -150px;
+  padding: 10px;
+  text-align: start;
+  backdrop-filter: blur(20px);
+}
+.dropdown:hover .language {
+  display: block;
+}
+.grid-lu {
+  position: relative;
+}
+.language-2 {
+  display: none;
+  position: absolute;
+  column-count: 2;
+  top: 40px;
+  right: -100px;
+  padding: 20px;
+  text-align: start;
+  backdrop-filter: blur(20px);
+}
+.grid-lu:hover .language-2 {
+  display: block;
+}
+.btn {
+  height: 40px;
+  width: 100px;
+  background-color: #167ccf;
+  font-size: large;
+  border-radius: 5px;
+  font-weight: 500;
+  color: white;
+  border: none;
+  margin: -5px;
+}
+.user-1 {
+  position: relative;
+}
+.language-3 {
+  position: absolute;
+  display: none;
+  top: 40px;
+  text-align: start;
+  padding: 20px;
+  backdrop-filter: blur(20px);
+
+}
+.user-1:hover .language-3 {
+  display: block;
+}
+.language-3 a {
+  gap: 5px;
+  padding: 10px;
+}
+#hero {
+  background-image: url(./asset/hero-img.avif);
+  height: 80vh;
+  width: 100vw;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
