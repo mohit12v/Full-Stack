@@ -2,10 +2,15 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Times New Roman";
 }
 body {
   background-color: #00050d;
   color: white;
+  justify-content: center;
+  align-items: center;
+  font-size: large;
+  background: linear-gradient(#000000);
 }
 nav {
   display: flex;
@@ -19,10 +24,13 @@ nav {
   list-style: none;
   justify-content: center;
   text-align: center;
+  align-items: center;
+  transition: 0.4 all ease-in-out;
 }
 
 .logo {
   width: 90px;
+  margin-top: 6px;
 }
 .sub,
 .grid {
@@ -30,7 +38,7 @@ nav {
   width: 22px;
   color: white;
   filter: invert(1);
-  margin: -3px;
+  justify-content: center;
 }
 nav a {
   color: white;
@@ -84,10 +92,13 @@ nav a:hover {
   background-color: #167ccf;
   font-size: large;
   border-radius: 5px;
-  font-weight: 500;
+  font-weight: 600;
   color: white;
   border: none;
-  margin: -5px;
+}
+.btn:hover {
+  box-shadow: rgba(11, 195, 220, 0.4) 0px 30px 90px;
+  scale: 1.1;
 }
 .user-1 {
   position: relative;
@@ -99,7 +110,6 @@ nav a:hover {
   text-align: start;
   padding: 20px;
   backdrop-filter: blur(20px);
-
 }
 .user-1:hover .language-3 {
   display: block;
@@ -110,8 +120,71 @@ nav a:hover {
 }
 #hero {
   background-image: url(./asset/hero-img.avif);
-  height: 80vh;
+  height: 100vh;
   width: 100vw;
   background-repeat: no-repeat;
   background-size: contain;
+  position: relative;
+}
+.mx-hero img {
+  height: 40px;
+  width: 40px;
+  position: absolute;
+  left: 70px;
+  top: 110px;
+}
+.jailer-hero img {
+  top: 160px;
+  position: absolute;
+  left: 80px;
+  height: 170px;
+  width: 330px;
+}
+.movie-details {
+  position: relative;
+}
+.trading-hero .upeer {
+  position: absolute;
+  top: 370px;
+  left: 100px;
+  color: rgb(83, 238, 83);
+}
+.trading-hero .upeers {
+  position: absolute;
+  top: 370px;
+  left: 140px;
+  color: rgb(83, 238, 83);
+}
+.text-hide {
+  top: 400px;
+  left: 99px;
+  display: none;
+  position: absolute;
+}
+.movie-details:hover .text-hide {
+  display: block;
+}
+.btn-play {
+  height: 60px;
+  width: 200px;
+  border-radius: 10px;
+  border: none;
+  gap: 8px;
+  justify-content: center;
+  display: flex;
+  text-align: center;
+  padding-top: 15px;
+  position: absolute;
+  top: 450px;
+  left: 90px;
+}
+.btn-play i {
+  font-size: 30px;
+}
+.font {
+  font-size: 24px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2px;
 }
