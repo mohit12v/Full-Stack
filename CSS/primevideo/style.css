@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Times New Roman";
+  font-family: sans-serif;
 }
 body {
   background-color: #00050d;
@@ -10,12 +10,18 @@ body {
   justify-content: center;
   align-items: center;
   font-size: large;
-  background: linear-gradient(#000000);
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  transition: 0.4 all ease-in-out;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.85), rgb(0, 0, 0, 0));
+  
+
 }
 nav {
   display: flex;
   justify-content: space-between;
   padding: 15px 50px;
+
 }
 .nav-left,
 .nav-right {
@@ -25,7 +31,6 @@ nav {
   justify-content: center;
   text-align: center;
   align-items: center;
-  transition: 0.4 all ease-in-out;
 }
 
 .logo {
@@ -120,10 +125,13 @@ nav a:hover {
 }
 #hero {
   background-image: url(./asset/hero-img.avif);
-  height: 100vh;
+  height: 80vh;
   width: 100vw;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
+  /* position: relative; */
+}
+.container {
   position: relative;
 }
 .mx-hero img {
@@ -139,9 +147,6 @@ nav a:hover {
   left: 80px;
   height: 170px;
   width: 330px;
-}
-.movie-details {
-  position: relative;
 }
 .trading-hero .upeer {
   position: absolute;
@@ -161,7 +166,7 @@ nav a:hover {
   display: none;
   position: absolute;
 }
-.movie-details:hover .text-hide {
+.container:hover .text-hide {
   display: block;
 }
 .btn-play {
@@ -177,6 +182,9 @@ nav a:hover {
   position: absolute;
   top: 450px;
   left: 90px;
+}
+.btn-play:hover {
+  scale: 1.1;
 }
 .btn-play i {
   font-size: 30px;
