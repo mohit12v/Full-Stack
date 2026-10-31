@@ -250,10 +250,9 @@ nav a:hover {
   width: 20vw;
   margin-left: 90px;
   margin-top: 20px;
-
 }
-.movie-card{
-    /* display: flex; */
+.movie-card {
+  /* display: flex; */
   flex-direction: column;
   gap: 10px;
   border-radius: 10px;
@@ -265,11 +264,11 @@ nav a:hover {
   transform: scale(1.1);
 }
 
-.movie-details-hidden{
+.movie-details-hidden {
   margin-left: 90px;
   display: none;
 }
-.movie-card:hover .movie-details-hidden{
+.movie-card:hover .movie-details-hidden {
   display: block;
 }
 .card-button {
@@ -299,7 +298,6 @@ nav a:hover {
   color: white;
   border: none;
   margin-top: 8px;
-
 }
 .plus-btn-2:hover {
   background-color: #ffffff;
@@ -316,33 +314,42 @@ nav a:hover {
   height: 40px;
   width: 30px;
   padding-top: 1px;
-  filter: invert(48%) sepia(79%) saturate(2476%)
-  hue-rotate(86deg) brightness(118%) contrast(119%);
+  filter: invert(48%) sepia(79%) saturate(2476%) hue-rotate(86deg)
+    brightness(118%) contrast(119%);
   margin-top: 12px;
 }
-.samll-detail-2{
+.samll-detail-2 {
   display: flex;
   gap: 8px;
   align-items: center;
 }
-.sm-btn{
+.sm-btn {
   border-radius: 5px;
   overflow: hidden;
-    font-size: 15px;
+  font-size: 15px;
   font-weight: 600;
 }
-.sm-2-btn{
+.sm-2-btn {
   border-radius: 5px;
   overflow: hidden;
-  background-color: #33373D;
+  background-color: #33373d;
   color: white;
   font-size: 15px;
   font-weight: 600;
 }
-.niche{
+.niche {
   padding-top: 5px;
 }
-.movie-card-wrapper{
+.movie-card-wrapper {
   display: flex;
-
+}
+#movie-section-2,
+#movie-section-3,
+#movie-section-4 {
+  margin-top: 10px;
+}
+.invert{
+  filter: invert(1);
+  height: 25px;
+  width: 22px;
 }
