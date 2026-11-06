@@ -251,7 +251,19 @@ nav a:hover {
   /* margin-left: 90px;
   margin-top: 20px; */
 }
-.movie-card,
+.movie-card{
+  /* display: flex; */
+  flex-direction: column;
+  gap: 10px;
+  transition: all 1s;
+  border: none;
+  top: 100%;
+  right: 0;
+  background-color: black;
+  /* z-index: 10000; */
+   flex-shrink: 0;
+}
+
 .movie-card-rank {
   /* display: flex; */
   flex-direction: column;
@@ -261,9 +273,9 @@ nav a:hover {
   top: 100%;
   right: 0;
   background-color: black;
-  /* z-index: 100; */
+  z-index: 1002;
+   flex-shrink: 0;
 }
-
 .movie-card:hover {
   transform: scale(1.3);
 }
@@ -279,14 +291,17 @@ nav a:hover {
   position: relative;
   transition: position 1s;
   flex-direction: column;
+   z-index: 1001;
 }
 .movie-card:hover .movie-details-hidden {
   display: block;
   position: absolute;
+   z-index: 1000;
 }
 .movie-card-rank:hover .movie-details-hidden {
   display: block;
   position: absolute;
+   z-index: 1000;
 }
 .card-button {
   display: flex;
@@ -455,22 +470,26 @@ nav a:hover {
 }
 .movie-card-wrapper-rank {
   counter-reset: movie-rank;
+  display: flex;
   position: relative;
   gap: 100px;
+  margin-left: 100px;
 }
+
 .movie-card-rank {
   counter-increment: movie-rank;
   position: relative;
-  z-index: 10;
-  
+  flex-shrink: 0;
+  z-index: 1;
 }
+
 .movie-card-rank::before {
   position: absolute;
   content: counter(movie-rank);
   font-size: 150px;
   top: -4px;
-  left: -94px;
+  left: -90px;
   font-weight: 800;
   color: #808286;
-  transform: none;
+  z-index: -1;
 }
