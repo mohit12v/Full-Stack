@@ -1,24 +1,126 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-body{
-    background-color: steelblue;
+body {
+  background-color: steelblue;
 }
-.container{
-    display: flex;
+.container {
+  display: flex;
+  justify-content: space-between;
 }
-.box{
-    height: 100px;
-    width: 100px;
-    border: 2px solid yellow;
+.box {
+  height: 100px;
+  width: 100px;
+  border: 2px solid yellow;
 }
-@media (width<=400px){
+@media (width<=400px) {
+  body {
+    background-color: blue;
+  }
+  .container {
+    flex-direction: column;
+  }
+}
+
+/* orienation */
+
+/* @media (orientation: landscape){
     body{
-        background-color: blue;
+        background-color: black;
+    }
+    #box{
+        background-color: aquamarine;
+    }
+} */
+/* @media (orientation: portrait){
+    body{
+        background-color: yellow;
+    }
+    #box-5{
+        background-color: green;
+    }
+} */
+
+/* min-width (starting point) & max-width (ending point) */
+
+/* @media (min-width:700px) {
+     body{
+        background-color: yellow;
+    }
+     #box-5{
+        background-color: green;
+    }
+
+} */
+/* @media (min-height:700px) {
+     body{
+        background-color: yellow;
+    }
+     #box-5{
+        background-color: green;
+    }
+
+} */
+/* @media (max-height:700px) {
+     body{
+        background-color: yellow;
+    }
+     #box-5{
+        background-color: green;
+    }
+
+} */
+/* @media (max-width:700px) {
+     body{
+        background-color: burlywood;
+    }
+     #box-5{
+        background-color: grey;
+    }
+
+} */
+
+/* box-combine */
+
+/* @media (min-width:400px) and (max-width:600px){
+    body{
+        background-color: lemonchiffon;
+    }
+    .box{
+    border-radius: 50px;
     }
     .container{
-        flex-direction: column;
+        justify-content: space-between;
+        grid-template-rows:repeat(2,1fr) ;
+
     }
+} */
+/* @media (min-height: 400px) and (max-height: 600px) {
+  body {
+    background-color: lemonchiffon;
+  }
+  .box {
+    border-radius: 50px;
+    border: 3px solid blue;
+  }
+  .container {
+    justify-content: space-between;
+    grid-template-columns: repeat(2, 1fr);
+    flex-direction: column;
+    gap: 50px;
+  }
+} */
+
+/* print & screen */
+
+@media screen and (max-width: 700px) {
+  body {
+    background-color: yellow;
+  }
+  .box {
+    border-radius: 50px;
+    border: 3px solid blue;
+  }
 }
