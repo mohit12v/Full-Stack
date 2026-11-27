@@ -1,4 +1,4 @@
-*{
+/* *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -10,7 +10,6 @@ body{
 .logo{
     font-size: 70px;
     justify-content: center;
-    /* text-align: center; */
 }
 nav{
     justify-content: space-between;
@@ -19,31 +18,902 @@ nav{
 nav a {
     text-decoration: none;
     color: blue;
-}
+} */
 
 /* mobile min-width */
 
-@media (min-width:768px) {
-    body{
+@media (min-width: 768px) {
+  body {
     background-color: greenyellow;
+    /* color: black; */
+    font-family: Arial, sans-serif;
+  }
+  header {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    /* background-color: black; */
+  }
+  .logo {
+    font-size: 20px;
+    justify-content: center;
+    margin-left: 5px;
     color: black;
-}
+  }
+  nav {
+    display: flex;
+    gap: 15px;
+  }
+  nav a {
+    text-decoration: none;
+    color: black;
+  }
+  .hero {
+    min-height: 83vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 40px 20px;
+    background-image: url(./asset/main-1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .btn {
+    height: 30px;
+    width: 150px;
+    border: 2px solid black;
+    background-color: green;
+    border-radius: 5px;
+    color: black;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5px;
+    border: none;
+  }
+  #about {
+    height: 200px;
+    width: 500px;
+    border: 2px solid black;
+    margin-top: 50px;
+    justify-content: center;
+    text-align: center;
+    margin-left: 130px;
+    background-color: white;
+    border: none;
+    align-items: center;
+    padding-top: 40px;
+    border-radius: 10px;
+  }
+  .section-highlights {
+    height: 350px;
+    width: 500px;
+    border: 2px solid black;
+    justify-content: center;
+  }
+  #highlights {
+    margin-left: 130px;
+    margin-top: 50px;
+    background-color: white;
+    border: 2px solid black;
+    justify-content: center;
+    text-align: center;
+    border-radius: 10px;
+    border: none;
+    padding-top: 30px;
+  }
+  .gallery {
+    height: 650px;
+    width: 600px;
+    border: 2px solid black;
+    margin-left: 85px;
+    margin-top: 50px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: white;
+    border-radius: 10px;
+    border: none;
+    padding-top: 10px;
+  }
+  .gallery-item img {
+    height: 100px;
+    width: 100px;
+  }
+  .set {
+    margin-left: 300px;
+  }
+  .set-1 {
+    margin-left: -300px;
+  }
+  .pricing {
+    height: 300px;
+    width: 600px;
+    border: 2px solid black;
+    margin-left: 90px;
+    margin-top: 50px;
+    border-radius: 10px;
+    background-color: white;
+    border: none;
+    padding-top: 10px;
+  }
+  .pricing h2 {
+    text-align: center;
+    justify-content: center;
+  }
+  .pricing-row {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    gap: 10px;
+  }
+  .section-testimonials {
+    /* display: flex; */
+    height: 300px;
+    width: 600px;
+    border: 2px solid black;
+    margin-left: 90px;
+    margin-top: 50px;
+    background-color: white;
+    border: none;
+    padding-top: 10px;
+    border-radius: 10px;
+  }
+  .section-testimonials h2 {
+    text-align: center;
+    justify-content: center;
+  }
+  .test-row {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+  }
+  .test-card {
+    height: 190px;
+    width: 200px;
+    border: 2px solid black;
+    border: none;
+    background-color: aquamarine;
+    border-radius: 10px;
+    text-align: center;
+    padding-top: 30px;
+  }
+  .contact {
+    /* display: flex; */
+    height: 350px;
+    width: 600px;
+    border: 2px solid black;
+    margin-left: 90px;
+    margin-top: 50px;
+    background-color: white;
+    border: none;
+    padding-top: 20px;
+    border-radius: 10px;
+  }
+  .contact h2 {
+    text-align: center;
+    justify-content: center;
+  }
+  .subtitle {
+    text-align: center;
+    justify-content: center;
+    padding-top: 10px;
+  }
+  .contact-wrapper {
+    display: flex;
+    padding-top: 30px;
+    gap: 20px;
+    justify-content: center;
+  }
+  .contact-info {
+    height: 150px;
+    width: 300px;
+    border: 2px solid black;
+    margin-left: 20px;
+    border: none;
+    padding-top: 10px;
+  }
+  .contact-form {
+    height: 150px;
+    width: 250px;
+    padding: 20px;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 20px;
+    border: none;
+  }
+  .contact-form input,
+  .contact-form textarea {
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 10px;
+    gap: 10px;
+  }
+  .footer{
+    height: 100%;
+    border: 2px solid black;
+    text-align: center;
+    justify-content: center;
+    color: white;
+    background-color: black;
+    margin-top: 50px;
+
+  }
 }
 @media (min-width:999px) {
     body{
     background-color: blueviolet;
     color: black;
 }
-}
-@media (min-width:1200x) {
-    body{
-    background-color: grey;
+ header {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    /* background-color: black; */
+  }
+  .logo {
+    font-size: 20px;
+    justify-content: center;
+    margin-left: 5px;
     color: black;
+  }
+  nav {
+    display: flex;
+    gap: 15px;
+  }
+  nav a {
+    text-decoration: none;
+    color: black;
+  }
+  .hero {
+    min-height: 83vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 40px 20px;
+    background-image: url(./asset/main-1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .btn {
+    height: 30px;
+    width: 150px;
+    border: 2px solid black;
+    background-color: green;
+    border-radius: 5px;
+    color: black;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5px;
+    border: none;
+  }
+  #about {
+    height: 200px;
+    width: 500px;
+    border: 2px solid black;
+    margin-top: 50px;
+    justify-content: center;
+    text-align: center;
+    margin-left: 230px;
+    background-color: white;
+    border: none;
+    align-items: center;
+    padding-top: 40px;
+    border-radius: 10px;
+  }
+  .section-highlights {
+    height: 350px;
+    width: 500px;
+    border: 2px solid black;
+    justify-content: center;
+  }
+  #highlights {
+    margin-left: 230px;
+    margin-top: 50px;
+    background-color: white;
+    border: 2px solid black;
+    justify-content: center;
+    text-align: center;
+    border-radius: 10px;
+    border: none;
+    padding-top: 30px;
+  }
+  .gallery {
+    height: 650px;
+    width: 600px;
+    border: 2px solid black;
+    margin-left: 180px;
+    margin-top: 50px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: white;
+    border-radius: 10px;
+    border: none;
+    padding-top: 10px;
+  }
+  .gallery-item img {
+    height: 100px;
+    width: 100px;
+  }
+  .set {
+    margin-left: 300px;
+  }
+  .set-1 {
+    margin-left: -300px;
+  }
+  .pricing {
+    height: 300px;
+    width: 600px;
+    border: 2px solid black;
+    margin-left: 180px;
+    margin-top: 50px;
+    border-radius: 10px;
+    background-color: white;
+    border: none;
+    padding-top: 10px;
+  }
+  .pricing h2 {
+    text-align: center;
+    justify-content: center;
+  }
+  .pricing-row {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    gap: 10px;
+  }
+  .section-testimonials {
+    /* display: flex; */
+    height: 300px;
+    width: 600px;
+    border: 2px solid black;
+    margin-left: 180px;
+    margin-top: 50px;
+    background-color: white;
+    border: none;
+    padding-top: 10px;
+    border-radius: 10px;
+  }
+  .section-testimonials h2 {
+    text-align: center;
+    justify-content: center;
+  }
+  .test-row {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+  }
+  .test-card {
+    height: 190px;
+    width: 200px;
+    border: 2px solid black;
+    border: none;
+    background-color: aquamarine;
+    border-radius: 10px;
+    text-align: center;
+    padding-top: 30px;
+  }
+  .contact {
+    /* display: flex; */
+    height: 350px;
+    width: 600px;
+    border: 2px solid black;
+    margin-left: 180px;
+    margin-top: 50px;
+    background-color: white;
+    border: none;
+    padding-top: 20px;
+    border-radius: 10px;
+  }
+  .contact h2 {
+    text-align: center;
+    justify-content: center;
+  }
+  .subtitle {
+    text-align: center;
+    justify-content: center;
+    padding-top: 10px;
+  }
+  .contact-wrapper {
+    display: flex;
+    padding-top: 30px;
+    gap: 20px;
+    justify-content: center;
+  }
+  .contact-info {
+    height: 150px;
+    width: 300px;
+    border: 2px solid black;
+    margin-left: 20px;
+    border: none;
+    padding-top: 10px;
+  }
+  .contact-form {
+    height: 150px;
+    width: 250px;
+    padding: 20px;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 20px;
+    border: none;
+  }
+  .contact-form input,
+  .contact-form textarea {
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 10px;
+    gap: 10px;
+  }
+  .footer{
+    height: 100%;
+    border: 2px solid black;
+    text-align: center;
+    justify-content: center;
+    color: white;
+    background-color: black;
+    margin-top: 50px;
+
+  }
 }
+@media (min-width:1200px) {
+    body{
+    background-color: steelblue;
+    color: black;
+
+}
+ header {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    /* background-color: black; */
+  }
+  .logo {
+    font-size: 20px;
+    justify-content: center;
+    margin-left: 5px;
+    color: black;
+  }
+  nav {
+    display: flex;
+    gap: 15px;
+  }
+  nav a {
+    text-decoration: none;
+    color: black;
+  }
+  .hero {
+    min-height: 83vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 40px 20px;
+    background-image: url(./asset/main-1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .btn {
+    height: 30px;
+    width: 150px;
+    border: 2px solid black;
+    background-color: green;
+    border-radius: 5px;
+    color: black;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5px;
+    border: none;
+  }
+  #about {
+    height: 200px;
+    width: 500px;
+    border: 2px solid black;
+    margin-top: 50px;
+    justify-content: center;
+    text-align: center;
+    margin-left: 350px;
+    background-color: white;
+    border: none;
+    align-items: center;
+    padding-top: 40px;
+    border-radius: 10px;
+  }
+  .section-highlights {
+    height: 350px;
+    width: 500px;
+    border: 2px solid black;
+    justify-content: center;
+  }
+  #highlights {
+    margin-left: 350px;
+    margin-top: 50px;
+    background-color: white;
+    border: 2px solid black;
+    justify-content: center;
+    text-align: center;
+    border-radius: 10px;
+    border: none;
+    padding-top: 30px;
+  }
+  .gallery {
+    height: 650px;
+    width: 600px;
+    border: 2px solid black;
+    margin-left: 300px;
+    margin-top: 50px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: white;
+    border-radius: 10px;
+    border: none;
+    padding-top: 10px;
+  }
+  .gallery-item img {
+    height: 100px;
+    width: 100px;
+  }
+  .set {
+    margin-left: 300px;
+  }
+  .set-1 {
+    margin-left: -300px;
+  }
+  .pricing {
+    height: 300px;
+    width: 600px;
+    border: 2px solid black;
+    margin-left: 300px;
+    margin-top: 50px;
+    border-radius: 10px;
+    background-color: white;
+    border: none;
+    padding-top: 10px;
+  }
+  .pricing h2 {
+    text-align: center;
+    justify-content: center;
+  }
+  .pricing-row {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    gap: 10px;
+  }
+  .section-testimonials {
+    /* display: flex; */
+    height: 300px;
+    width: 600px;
+    border: 2px solid black;
+    margin-left: 300px;
+    margin-top: 50px;
+    background-color: white;
+    border: none;
+    padding-top: 10px;
+    border-radius: 10px;
+  }
+  .section-testimonials h2 {
+    text-align: center;
+    justify-content: center;
+  }
+  .test-row {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+  }
+  .test-card {
+    height: 190px;
+    width: 200px;
+    border: 2px solid black;
+    border: none;
+    background-color: aquamarine;
+    border-radius: 10px;
+    text-align: center;
+    padding-top: 30px;
+  }
+  .contact {
+    /* display: flex; */
+    height: 350px;
+    width: 600px;
+    border: 2px solid black;
+    margin-left: 300px;
+    margin-top: 50px;
+    background-color: white;
+    border: none;
+    padding-top: 20px;
+    border-radius: 10px;
+  }
+  .contact h2 {
+    text-align: center;
+    justify-content: center;
+  }
+  .subtitle {
+    text-align: center;
+    justify-content: center;
+    padding-top: 10px;
+  }
+  .contact-wrapper {
+    display: flex;
+    padding-top: 30px;
+    gap: 20px;
+    justify-content: center;
+  }
+  .contact-info {
+    height: 150px;
+    width: 300px;
+    border: 2px solid black;
+    margin-left: 20px;
+    border: none;
+    padding-top: 10px;
+  }
+  .contact-form {
+    height: 150px;
+    width: 250px;
+    padding: 20px;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 20px;
+    border: none;
+  }
+  .contact-form input,
+  .contact-form textarea {
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 10px;
+    gap: 10px;
+  }
+  .footer{
+    height: 100%;
+    border: 2px solid black;
+    text-align: center;
+    justify-content: center;
+    color: white;
+    background-color: black;
+    margin-top: 50px;
+
+  }
 }
 @media (min-width:1400px) {
-    body{
-    background-color: white;
+   
+  body{
+    background-color: rgb(185, 82, 158);
     color: black;
 }
+ header {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    /* background-color: black; */
+  }
+  .logo {
+    font-size: 20px;
+    justify-content: center;
+    margin-left: 5px;
+    color: black;
+  }
+  nav {
+    display: flex;
+    gap: 15px;
+  }
+  nav a {
+    text-decoration: none;
+    color: black;
+  }
+  .hero {
+    min-height: 83vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 40px 20px;
+    background-image: url(./asset/main-1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .btn {
+    height: 30px;
+    width: 150px;
+    border: 2px solid black;
+    background-color: green;
+    border-radius: 5px;
+    color: black;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5px;
+    border: none;
+  }
+  #about {
+    height: 200px;
+    width: 500px;
+    border: 2px solid black;
+    margin-top: 50px;
+    justify-content: center;
+    text-align: center;
+    margin-left: 470px;
+    background-color: white;
+    border: none;
+    align-items: center;
+    padding-top: 40px;
+    border-radius: 10px;
+  }
+  .section-highlights {
+    height: 350px;
+    width: 500px;
+    border: 2px solid black;
+    justify-content: center;
+  }
+  #highlights {
+    margin-left: 470px;
+    margin-top: 50px;
+    background-color: white;
+    border: 2px solid black;
+    justify-content: center;
+    text-align: center;
+    border-radius: 10px;
+    border: none;
+    padding-top: 30px;
+  }
+  .gallery {
+    height: 650px;
+    width: 600px;
+    border: 2px solid black;
+    margin-left: 415px;
+    margin-top: 50px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: white;
+    border-radius: 10px;
+    border: none;
+    padding-top: 10px;
+  }
+  .gallery-item img {
+    height: 100px;
+    width: 100px;
+  }
+  .set {
+    margin-left: 300px;
+  }
+  .set-1 {
+    margin-left: -300px;
+  }
+  .pricing {
+    height: 300px;
+    width: 600px;
+    border: 2px solid black;
+    margin-left: 420px;
+    margin-top: 50px;
+    border-radius: 10px;
+    background-color: white;
+    border: none;
+    padding-top: 10px;
+  }
+  .pricing h2 {
+    text-align: center;
+    justify-content: center;
+  }
+  .pricing-row {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    gap: 10px;
+  }
+  .section-testimonials {
+    /* display: flex; */
+    height: 300px;
+    width: 600px;
+    border: 2px solid black;
+    margin-left: 420px;
+    margin-top: 50px;
+    background-color: white;
+    border: none;
+    padding-top: 10px;
+    border-radius: 10px;
+  }
+  .section-testimonials h2 {
+    text-align: center;
+    justify-content: center;
+  }
+  .test-row {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+  }
+  .test-card {
+    height: 190px;
+    width: 200px;
+    border: 2px solid black;
+    border: none;
+    background-color: aquamarine;
+    border-radius: 10px;
+    text-align: center;
+    padding-top: 30px;
+  }
+  .contact {
+    /* display: flex; */
+    height: 350px;
+    width: 600px;
+    border: 2px solid black;
+    margin-left: 420px;
+    margin-top: 50px;
+    background-color: white;
+    border: none;
+    padding-top: 20px;
+    border-radius: 10px;
+  }
+  .contact h2 {
+    text-align: center;
+    justify-content: center;
+  }
+  .subtitle {
+    text-align: center;
+    justify-content: center;
+    padding-top: 10px;
+  }
+  .contact-wrapper {
+    display: flex;
+    padding-top: 30px;
+    gap: 20px;
+    justify-content: center;
+  }
+  .contact-info {
+    height: 150px;
+    width: 300px;
+    border: 2px solid black;
+    margin-left: 20px;
+    border: none;
+    padding-top: 10px;
+  }
+  .contact-form {
+    height: 150px;
+    width: 250px;
+    padding: 20px;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 20px;
+    border: none;
+  }
+  .contact-form input,
+  .contact-form textarea {
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 10px;
+    gap: 10px;
+  }
+  .footer{
+    height: 100%;
+    border: 2px solid black;
+    text-align: center;
+    justify-content: center;
+    color: white;
+    background-color: black;
+    margin-top: 50px;
+
+  }
 }
